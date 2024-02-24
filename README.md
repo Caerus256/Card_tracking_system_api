@@ -40,13 +40,11 @@ This project implements a simple Card Status Tracking System using Flask, a web 
 ## Build and Run
     - The application has been dockerized for simplified deployment and consistency across environments. Follow the steps below to use the Docker image:
 
-    ```bash
     # Build the Docker image
     docker build -t {Flask app name} .
 
     # Run the Docker container 
     docker run -p 5000:5000 {Flask app name}
-    ```
 
     Now you can access the application at `localhost:5000` and utilize the API endpoints to retrieve data.
 
