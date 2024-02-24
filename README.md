@@ -50,18 +50,17 @@ In order to run this container you'll need docker installed.
 
 #### Container Parameters
 
-    - The application has been dockerized for simplified deployment and consistency across environments. Follow the steps below to use the Docker image:
+The application has been dockerized for simplified deployment and consistency across environments. Follow the steps below to use the Docker image:
 
-    ```shell
-    # Build the Docker image
-    docker build -t {Flask app name} .
-    ```
+# Build the Docker image
+```shell
+docker build -t {Flask app name} .
+```
 
-    ```shell
-    docker run -p 5000:5000 {Flask app name}
-    ```
-
-    Now you can access the application at `localhost:5000` and utilize the API endpoints to retrieve data.
+```shell
+docker run -p 5000:5000 {Flask app name}
+```
+Now you can access the application at `localhost:5000` and utilize the API endpoints to retrieve data.
 
 ## Conclusion
 
