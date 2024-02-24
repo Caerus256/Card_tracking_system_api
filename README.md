@@ -52,11 +52,11 @@ In order to run this container you'll need docker installed.
 
 The application has been dockerized for simplified deployment and consistency across environments. Follow the steps below to use the Docker image:
 
-# Build the Docker image
+# 1. Build the Docker image
 ```shell
 docker build -t {Flask app name} .
 ```
-
+# 2. Port Forwarding (Map Port 5000):
 ```shell
 docker run -p 5000:5000 {Flask app name}
 ```
