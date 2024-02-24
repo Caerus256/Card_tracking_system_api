@@ -37,14 +37,29 @@ This project implements a simple Card Status Tracking System using Flask, a web 
 3. **Scaling:**
     - For larger-scale applications, consider migrating to a more robust database system (e.g., PostgreSQL)
 
-## Build and Run
+### Prerequisities
+
+
+In order to run this container you'll need docker installed.
+
+* [Windows](https://docs.docker.com/windows/started)
+* [OS X](https://docs.docker.com/mac/started/)
+* [Linux](https://docs.docker.com/linux/started/)
+
+### Usage
+
+#### Container Parameters
+
     - The application has been dockerized for simplified deployment and consistency across environments. Follow the steps below to use the Docker image:
 
+    ```shell
     # Build the Docker image
     docker build -t {Flask app name} .
+    ```
 
-    # Run the Docker container 
+    ```shell
     docker run -p 5000:5000 {Flask app name}
+    ```
 
     Now you can access the application at `localhost:5000` and utilize the API endpoints to retrieve data.
 
